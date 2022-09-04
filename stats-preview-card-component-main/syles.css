@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Orbitron&family=Poppins:wght@400;700&display=swap');
+
+* {
+  /* background: hsl(233, 47%, 7%); */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+}
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-size: medium;
+  /* color: hsla(0, 0%, 100%, 0.6); */
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 13px;
+}
+img {
+  width: 100%;
+  /* height: 100%; */
+  /* display: block; */
+}
+.card_img {
+  /* width: 100%; */
+  background: linear-gradient(
+      rgba(170, 92, 219, 0.45),
+      hsla(277, 64%, 61%, 0.45)
+    ),
+    url('./images/image-header-desktop.jpg');
+}
+.card {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 5rem;
+  /* padding: 3rem; */
+  /* border-radius: 50px; */
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.card_desc,
+.card_img {
+  width: 420px;
+  /* height: auto; */
+  /* border-radius: 10px; */
+}
+
+.card_desc {
+  background-color: hsl(244, 38%, 16%);
+  padding: 2.5rem;
+}
+
+.card_desc h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card_review {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.attribution {
+  color: aqua;
+}
+
+@media (max-width: 858px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* align-items: center; */
+    /* padding-top: 1rem; */
+    padding: 0.5rem;
+    /* border-radius: 50px; */
+
+    max-width: 70%;
+    margin: 0 auto 20px;
+    /* height: 500px; */
+  }
+  .card_img {
+    width: 420px;
+    height: 280px;
+    /* border-radius: 10px; */
+  }
+  .card_review {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .card_review span {
+    margin: 10px;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 100%);
+  }
+} ;
